@@ -1,0 +1,14 @@
+@model AccountRegister.Result
+
+<template data-page-update-target>
+    
+    <div class="alert alert-success">
+        Your account has been created!
+    </div>
+    
+    <a for="@(new AccountLogin.Query { ReturnUrl = Model.ReturnUrl })">
+        Would you like to Login now?
+    </a>
+
+</template>
+                

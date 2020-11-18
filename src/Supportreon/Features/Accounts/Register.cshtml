@@ -1,0 +1,59 @@
+@model AccountRegister.Command
+
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-body">
+                
+                <h3>New Account</h3>
+                
+                <miru-form>
+                    
+                    <miru-summary />
+                    
+                    <mi for="ReturnUrl" type="hidden" />
+                    
+                    <div class="form-group row">
+                        <ml for="Name" class="col-md-4 col-form-label text-md-right" />
+                         
+                        <div class="col-md-6">
+                            <mi for="Name" autofocus />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <ml for="Email" class="col-md-4 col-form-label text-md-right" />
+                         
+                        <div class="col-md-6">
+                            <mi for="Email" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <ml for="Password" class="col-md-4 col-form-label text-md-right" />
+                         
+                        <div class="col-md-6">
+                            <mi for="Password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <ml for="PasswordConfirmation" class="col-md-4 col-form-label text-md-right" />
+                         
+                        <div class="col-md-6">
+                            <mi for="PasswordConfirmation" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row mb-0">
+                        <div class="col-md-6 offset-md-4">
+                            <miru-submit />
+                        </div>
+                    </div>
+                    
+                </miru-form>
+                
+            </div>
+        </div>
+    </div>
+</div>

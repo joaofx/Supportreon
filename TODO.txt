@@ -1,0 +1,62 @@
+TODO Supportreon Features for Miru benefit:
+
+Pass ReturnUrl around:
+    Anonymous: /Projects/New
+    Redirect: Accounts/Login?ReturnUrl=PROJECT_NEW
+    Click Sign Up: Accounts/Register?ReturnUrl=PROJECT_NEW
+    Sign Up: Flash success
+    Click Sign In: Accounts/Login?ReturnUrl=PROJECT_NEW
+    Render full: Project/New
+
+DonationNew
+    [x] Donate monthly (create a scheduled job)
+    Amount uses User's profile currency 
+    
+ProjectNew/ProjectEdit
+    Amount uses User's profile currency 
+    End Date uses User's profile format OR browser settings
+    
+------------------------------------------------------------------
+TODO Supportreon Features (Not related with Miru improvement):
+
+Home
+    Should list last added projects and last donations
+    
+Rename ProjectEnd to ProjectClose
+    
+Add PasswordRemember
+Add PasswordReset
+Add PasswordEdit
+Add ProjectMy to show users' project
+
+Add UserShow
+Add UserEdit 
+    own user edit its info
+    set currency (see DonationNew above)
+
+Add User.Admin
+    Seed Admin
+
+Add AdminHome
+Add Manage Users
+
+AccountRegister: SignUp email should be unique
+
+Improve layout
+
+DonationNew
+    better layout, better success message, brings minimum donation to input, add validation    
+
+/Projects/2 
+    show donation goal, 
+    show end date
+    
+/Projects shows creator's name
+/Projects/New add field to thank you message, goal
+/User/1 shows user info, its projects and donations
+
+NewProject
+    Fix inputs sizes
+    Add calendar to EndDate
+    Add placeholder for end date, goal, minimum donation
+    
